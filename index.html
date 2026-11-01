@@ -209,10 +209,11 @@ details p{padding:0 0 24px;color:var(--stahl);max-width:60ch}
 /* Kontakt */
 .kontakt{background:var(--weiss)}
 .kontakt-grid{display:grid;grid-template-columns:5fr 7fr;gap:72px;margin-top:48px}
-.nap{font-style:normal;display:grid;gap:26px;align-content:start}
-.nap div{display:flex;gap:16px}
-.nap small{display:block;color:var(--stahl);font-size:15px}
-.nap a{text-decoration:none;font-weight:600;font-size:21px}
+.nap{font-style:normal;display:grid;gap:24px;align-content:start}
+.nap>div{display:flex;gap:18px;align-items:stretch}
+.nap>div>div{display:block}
+.nap small{display:block;color:var(--stahl);font-size:14px;font-weight:500;line-height:1.3;margin-bottom:4px}
+.nap .wert,.nap a{display:block;font-size:19px;font-weight:500;line-height:1.45;color:var(--anthrazit);text-decoration:none}
 .nap a:hover{color:var(--ostsee)}
 form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 form .full{grid-column:1/-1}
@@ -231,7 +232,7 @@ footer nav a:hover{color:#fff}
 a.ig{display:inline-flex;align-items:center;gap:8px}
 footer a.ig svg{width:18px;height:18px}
 .lead a{color:var(--ostsee);text-underline-offset:3px}
-.nap a.ig{font-size:19px}
+
 
 .mobile-call{display:none}
 @media (max-width:640px){
@@ -370,9 +371,9 @@ footer a.ig svg{width:18px;height:18px}
       <address class="nap">
         <div><i class="rohr"></i><div><small>Telefon</small><a href="tel:+49382937232">038293 7232</a></div></div>
         <div><i class="rohr"></i><div><small>E-Mail</small><a href="mailto:mail@hartung-geruestbau.de">mail@hartung-geruestbau.de</a></div></div>
-        <div><i class="rohr"></i><div><small>Adresse</small>Hartung Gerüstbau GmbH<br>Zur Asbeck 8, 18225 Kühlungsborn</div></div>
-        <div><i class="rohr"></i><div><small>Fax</small>038293 6127</div></div>
-        <div><i class="rohr"></i><div><small>Instagram</small><a class="ig" href="https://www.instagram.com/geruestbaurostockwismar/" target="_blank" rel="noopener"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>@geruestbaurostockwismar</a></div></div>
+        <div><i class="rohr"></i><div><small>Adresse</small><span class="wert">Zur Asbeck 8<br>18225 Kühlungsborn</span></div></div>
+        <div><i class="rohr"></i><div><small>Fax</small><span class="wert">038293 6127</span></div></div>
+        <div><i class="rohr"></i><div><small>Instagram</small><a href="https://www.instagram.com/geruestbaurostockwismar/" target="_blank" rel="noopener">@geruestbaurostockwismar</a></div></div>
       </address>
       <form id="anfrage" novalidate>
         <label>Name<input name="name" autocomplete="name" required></label>
