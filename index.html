@@ -130,9 +130,10 @@ nav.main a:hover{opacity:1}
 
 /* Hero */
 .hero{position:relative;min-height:min(92vh,820px);display:flex;align-items:flex-end;color:#fff;background:var(--anthrazit) url(/img/header.webp) center 30%/cover no-repeat}
-.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,35,39,.55) 0%,rgba(29,35,39,.15) 35%,rgba(29,35,39,.88) 100%)}
-.hero .wrap{position:relative;width:100%;padding-top:140px;padding-bottom:64px}
-.hero h1{font-size:clamp(46px,8.2vw,112px);line-height:.98;max-width:12ch;animation:hoch .9s cubic-bezier(.2,.7,.2,1) both}
+.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(29,35,39,.6) 0%,rgba(29,35,39,0) 22%),linear-gradient(90deg,rgba(29,35,39,.94) 0%,rgba(29,35,39,.82) 42%,rgba(29,35,39,.25) 80%,rgba(29,35,39,.1) 100%)}
+@media (max-width:760px){.hero::before{background:linear-gradient(180deg,rgba(29,35,39,.7) 0%,rgba(29,35,39,.86) 45%,rgba(29,35,39,.95) 100%)}}
+.hero .wrap{position:relative;width:100%;padding-top:150px;padding-bottom:72px}
+.hero h1{font-size:clamp(44px,6.6vw,92px);line-height:1;max-width:13ch;animation:hoch .9s cubic-bezier(.2,.7,.2,1) both}
 .hero .lead{color:#dfe5ea;font-size:clamp(18px,1.8vw,21px);animation:hoch .9s .12s cubic-bezier(.2,.7,.2,1) both}
 .hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:32px;animation:hoch .9s .22s cubic-bezier(.2,.7,.2,1) both}
 @keyframes hoch{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
