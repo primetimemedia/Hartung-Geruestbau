@@ -3,8 +3,8 @@
 Statische, SEO-optimierte Neuauflage von hartung-geruestbau.de. Deployment über Vercel (kein Build-Schritt nötig).
 
 ## Offen vor Livegang
-- Projektfotos selbst hosten (Galerie verweist noch auf alte Bild-URLs)
-- `og-image.jpg` (1200×630) ergänzen
+- Projektfotos liegen jetzt komprimiert (WebP) unter `/img`
+- Optional: eigenes Vorschaubild (1200×630) für Social Media; aktuell wird `img/header.webp` genutzt
 - `datenschutz.html` anlegen
 - USt-IdNr. im Impressum eintragen
 - Leistungen & FAQ mit Hartung abstimmen
