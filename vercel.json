@@ -1,0 +1,17 @@
+{
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "redirects": [
+    { "source": "/geruestbau", "destination": "/", "permanent": true },
+    { "source": "/geruestbau/", "destination": "/", "permanent": true },
+    { "source": "/geruestbau-rostock-kontaktformular/", "destination": "/#kontakt", "permanent": true },
+    { "source": "/geruestbau-rostock-jobs/", "destination": "/#jobs", "permanent": true },
+    { "source": "/impressum/", "destination": "/impressum", "permanent": true },
+    { "source": "/datenschutzerklaerung/", "destination": "/datenschutz", "permanent": true },
+    { "source": "/disclaimer/", "destination": "/impressum", "permanent": true },
+    { "source": "/tag/:slug*", "destination": "/#einsatzgebiet", "permanent": true },
+    { "source": "/category/:slug*", "destination": "/#projekte", "permanent": true },
+    { "source": "/20:year/:rest*", "destination": "/#projekte", "permanent": true },
+    { "source": "/page/:n*", "destination": "/", "permanent": true }
+  ]
+}
